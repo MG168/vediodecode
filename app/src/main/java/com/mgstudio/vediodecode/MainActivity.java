@@ -8,6 +8,8 @@ import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+import com.mgstudio.vediodecode.encoder.VideoEncoder;
+
 import java.nio.ByteBuffer;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     static final int OUTPUT_WIDTH = 640;
     static final int OUTPUT_HEIGHT = 480;
 
-//    添加编码解码方法
+//    视频编码/解码器：添加编码解码方法
     VideoEncoder mEncoder;
     VideoDecoder mDecoder;
 
