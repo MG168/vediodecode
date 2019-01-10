@@ -4,11 +4,12 @@ import android.media.MediaCodec;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Surface;
 import android.view.SurfaceHolder;
-import android.view.SurfaceView;
 
+import com.mgstudio.vediodecode.decoder.VideoDecoder;
 import com.mgstudio.vediodecode.encoder.VideoEncoder;
+import com.mgstudio.vediodecode.model.VideoPacket;
+import com.mgstudio.vediodecode.surface.SurfaceView;
 
 import java.nio.ByteBuffer;
 
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     class MyEncoder extends VideoDecoder {
 
-        byte[] mBuffer = new byte[];
+        byte[] mBuffer = new byte[0];
 
         public MyEncoder() {
             super(mEncoderSurfaceView, OUTPUT_WIDTH, OUTPUT_HEIGHT);
