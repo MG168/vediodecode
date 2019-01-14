@@ -6,6 +6,7 @@ import android.view.Surface;
 
 import com.mgstudio.vediodecode.decoder.VideoDecoder;
 import com.mgstudio.vediodecode.model.ByteUtils;
+import com.mgstudio.vediodecode.model.MediaPacket;
 import com.mgstudio.vediodecode.model.VideoPacket;
 
 import java.io.DataInputStream;

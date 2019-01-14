@@ -1,6 +1,6 @@
 package com.mgstudio.vediodecode.model;
 //媒体包
-class MediaPacket {
+public class MediaPacket {
 
 
     public enum Type {
